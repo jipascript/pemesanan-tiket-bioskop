@@ -59,7 +59,7 @@
       <label for="film">Pilih Film:</label>
       <select id="film" name="film" required onchange="updatePreview()">
         <option value="" selected disabled>-- Pilih Film --</option>
-        <option value="Final Destination Bloodlines">Final Destination Bloodlines</option>
+        <option value="Alice in Borderland II">Alice in Borderland II</option>
         <option value="Omniscient Reader: The Prophet">Omniscient Reader: The Prophet</option>
         <option value="Sweet Home 3">Sweet Home 3</option>
       </select>
@@ -104,9 +104,9 @@
       preview.style.display = "flex";  // Tampilin preview kalau udah pilih
 
       // Ini bagian buat update poster & deskripsi berdasarkan film yg dipilih
-      if (film === "Final Destination Bloodlines") {
-        poster.src = "img/finaldestination.jpg";
-        deskripsi.innerHTML = "<strong>Final Destination Bloodlines</strong><br>Nasib tidak bisa ditolak. Teror datang tanpa peringatan dalam babak baru Final Destination.";
+      if (film === "Alice in Borderland II") {
+        poster.src = "img/aliceinborderland2.jpg";
+        deskripsi.innerHTML = "<strong>Alice in Borderland II</strong><br>Arisu dan teman-temannya kembali terjebak di dunia permainan hidup dan mati yang lebih brutal dari sebelumnya.";
       } else if (film === "Omniscient Reader: The Prophet") {
         poster.src = "img/omniscientreader.jpg";
         deskripsi.innerHTML = "<strong>Omniscient Reader: The Prophet</strong><br>Dunia berubah mengikuti isi novel—hanya satu pembaca yang tahu jalan ceritanya.";
@@ -126,7 +126,7 @@
       if (isNaN(jumlah)) jumlah = 0;
 
       if (jumlah > 5) {
-        // validasi biar gak bisa pesan lebih dari 5 tiket tp masih bingung gimana cara biar angkanya tetep ketulis wkwk
+        // validasi biar gak bisa pesan lebih dari 5 tiket tp masih bingung gimana cara biar angkanya t
         alert("Maaf, maksimal pembelian hanya 5 tiket!");
         jumlahInput.value = 5;
         jumlah = 5;
